@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Usaha </title>
+</head>
+<body>
+  <header>
+    <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+     }
+  
+    body {
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+     }
+
+    header nav {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px;
+     }
+
+    header nav a {
+    text-decoration: none;
+    color: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    text-transform: capitalize;
+    border-radius: 100vw;
+    padding: .5rem 1rem;
+    transition: .3s ease;
+    }
+
+    header nav a:hover ,.active{
+    background:rgb(172, 0, 134);
+    }
+
+  .usaha {
+    top: 4px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    color: #fff;
+    background-color: #000000;
+  }
+  
+  .produk {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/767/117/119/fruits-fruits-and-vegetables-fruit-heart-shaped-wallpaper-preview.jpg);
+    padding: 40px 20px;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .produk h2 {
+    margin-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: 0 3px black;
+  }
+  
+  .buah-konten {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tampilan {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+  }
+  .tampilan:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+  
+  .tampilan img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .tampilan h3 {
+    margin-top: 10px;
+  }
+  
+  .tampilan p {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #cc00ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+    </style>
+      <div class="usaha">
+        <h1> USAHA KEBUN BAPAK </h1>
+      </div>
+      <nav>
+        <a href="Portofolio.html" class="active"> Home </a>
+        <a href="about.html"> Biodata </a>
+        <a href="pendidikan.html"> Skill & Pendidikan </a>
+        <a href="usaha.html"> Usaha </a>
+        <a href="contact.html"> Contact</a>
+      </nav>
+  </header>
+  <section class="produk">
+    <h2> Jual Bual Lokal Tanaman Sendiri </h2>
+    <div class="buah-konten">
+      <div class="tampilan">
+        <img src="/foto/cakra.jpg" alt="tampilan 1">
+        <h3> Cabe Cakra Lokal  </h3>
+        <p> Rp. 40.000 per Kg </p>
+        <a href="#" class="btn">Detail</a>
+      </div>
+      <div class="tampilan">
+        <img src="/foto/semangka.jpg" alt="tampilan 2"> 
+        <h3> Semangka Inul </h3>
+        <p> Rp. 8000 per Kg</p>
+        <a href="#" class="btn">Detail</a>
+      </div>
+      <div class="tampilan">
+        <img src="/foto/Matoa.jpg " alt="tampilan 3">
+        <h3> Matoa  </h3>
+        <p> Rp.20.000 per Kg </p>
+        <a href="#" class="btn">Detail</a>
+      </div>
+      <div class="tampilan">
+        <img src="/foto/patai.jpg" alt="tampilan 4">
+        <h3> Petai Madu  </h3>
+        <p> Rp. 15.000 per Ikat</p>
+        <a href="#" class="btn">Detail</a>
+      </div>
+      <div class="tampilan">
+        <img src="/foto/peranggi.jpg " alt="tampilan 5">
+        <h3> Cabe Peranggi  </h3>
+        <p> Rp. 60.000 per Kg</p>
+        <a href="#" class="btn">Detail</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Hak Cipta &copy; 2023 Usaha Buah Bapak</p>
+  </footer>
+</body>
+
+</html>

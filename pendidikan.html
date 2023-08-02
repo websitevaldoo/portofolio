@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skill & Education </title>
+</head>
+<body>
+    <style>
+      body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat',sans-serif;
+    background: #171115;
+    color: #fff;
+}
+body::before,body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: 15rem;
+    aspect-ratio: 1/1;
+    filter: blur(50px);
+    background: rgb(0, 17, 255);
+}
+body::before{
+    top: -5rem;left: -5rem;
+}
+body::after{
+    top: unset;left: unset;
+    bottom: -rem;right: -5rem;
+}  
+nav {
+    display: flex;
+    gap: .5rem;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    }
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+    border-radius: 100vw;
+    padding: .5rem 1rem;
+    transition: .3s ease;
+    }
+
+nav a:hover ,.active{
+    background:rgb(172, 0, 134);
+    }
+
+#skill {
+    font-family:inherit;
+}
+
+.prajudul{
+    padding-left: 10px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.judul-edukasi{
+    font-size: 12px;
+}
+.judul-edukasi p{
+    font-size: 9px;
+}
+
+.edukasi-tahun{
+    font-size: 12px;
+}
+.edukasi{
+    display: flex;
+    gap: 2rem;
+}
+
+.edukasi .garis{
+    padding: 0 0.77rem;
+}
+
+.edukasi .garis div{
+    width: 2px;
+    height: 100%;
+    background: rgb(226, 212, 212);
+    position: relative;
+
+}
+
+.info-edukasi{
+    padding-left: 17px;
+}
+.info-edukasi p{
+    margin: 0.2rem 0rem;
+}
+
+.alamat{
+    font-size: 9px;
+}
+.edukasi-tahun{
+    margin-bottom: 1px;
+}
+
+.edukasi .garis div:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: 16px;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skill-kanan ul{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.skill-kanan p{
+    text-align: justify;
+    padding-right: 65px;
+}
+    </style>
+    <nav>
+        <a href="Portofolio.html" class="active"> Home </a>
+        <a href="about.html"> Biodata </a>
+        <a href="pendidikan.html"> Skill & Pendidikan </a>
+        <a href="usaha.html"> Usaha </a>
+        <a href="contact.html"> Contact</a>
+      </nav>
+
+    <section id="skill">
+        <div class="skill-konten">
+            <h1 class="prajudul"> Pendidikan  </h1>
+
+        <div class="skill-grid">
+            <div class="skill-kiri">
+                <div class="edukasi">
+                    <div class="garis">
+                        <div></div>
+                    </div>
+
+                    <div class="info-edukasi">
+                        <h4 class="judul-edukasi"> PAUD ANGGREK PUTIH</h4>
+                        <p class="alamat"> Desa Nibung, Kec.Paloh Kab. Sambas Prov. Kalimantan Barat</p>
+                        <h4 class="edukasi-tahun"> 2008 - 2010</h4>
+                    </div>
+                </div>
+                <div class="edukasi">
+                    <div class="garis">
+                        <div></div>
+                    </div>
+
+                    <div class="info-edukasi">
+                        <h4 class="judul-edukasi"> SD NEGERI 05 NIBUNG </h4>
+                        <p class="alamat"> Jalan Raya Nibung, Kec.Paloh Kab. Sambas Prov. Kalimantan Barat</p>
+                        <h4 class="edukasi-tahun"> 2010 - 2016</h4>
+                    </div>
+                </div>
+                <div class="edukasi">
+                    <div class="garis">
+                        <div></div>
+                    </div>
+
+                    <div class="info-edukasi">
+                        <h4 class="judul-edukasi"> SMP NEGERI 01 PALOH </h4>
+                        <p class="alamat"> Jalan Raya Liku, Kec.Paloh Kab. Sambas Prov. Kalimantan Barat</p>
+                        <h4 class="edukasi-tahun"> 2016 - 2019</h4>
+                    </div>
+                </div>
+                <div class="edukasi">
+                    <div class="garis">
+                        <div></div>
+                    </div>
+
+                    <div class="info-edukasi">
+                        <h4 class="judul-edukasi"> SMK NEGERI 1 PALOH </h4>
+                        <p class="alamat"> Jalan Raya Tanah Hitam, Kec.Paloh Kab. Sambas Prov. Kalimantan Barat</p>
+                        <h4 class="edukasi-tahun"> 2019 - 2022</h4>
+                    </div>
+                </div>
+                <div class="edukasi">
+                    <div class="garis">
+                        <div></div>
+                    </div>
+
+                    <div class="info-edukasi">
+                        <h4 class="judul-edukasi"> POLITEKNIK NEGERI SAMBAS </h4>
+                        <p class="alamat"> Jalan Raya Sejangkung Kab. Sambas Prov. Kalimantan Barat</p>
+                        <h4 class="edukasi-tahun"> 2022 - 2026</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-kanan">
+                <p> Berjenjang Pendidikan yang aku tempuh dari menduduki bangku anak usia dini hingga sekarang menduduki bangku perkuliahan
+                    dari menjadi anak kecil hingga menjadi seorang mahasiswa di Kampus POLITEKNIK NEGERI SAMBAS pada saat ini. 20 Tahun telah berada didalam kawasan pembelajaran hingga saat ini
+                    dan inilah ilmu yang saya dapat dan bisa saya dalami dan bisa berkembang untuk kedepannya.
+                </p>
+                <div class="skill-list">
+                    <ul>
+                        <li> HTML </li>
+                        <li> CSS</li>
+                        <li> Adobe Illustrator</li>
+                        <li> Animasi 2D</li>
+                        <li> Adobe Photoshop</li>
+                    </ul>
+
+                    <ul>
+                        <li> C++  </li>
+                        <li> Unity </li>
+                        <li> Design Fotografi </li>
+                        <li> Editing Video </li>
+                        <li> Content Creator </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
