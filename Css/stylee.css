@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat',sans-serif;
+    background: #171115;
+    color: #fff;
+    text-shadow: 0 2px 9px rgb(255, 0, 179);
+}
+body::before,body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: 15rem;
+    aspect-ratio: 1/1;
+    filter: blur(50px);
+    background: rgb(0, 17, 255);
+}
+body::before{
+    top: -5rem;left: -5rem;
+}
+body::after{
+    top: unset;left: unset;
+    bottom: -5rem;right: -5rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-inline: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+header img{
+    width: 5rem;
+}
+header nav {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: .9rem;
+    text-transform: capitalize;
+    border-radius: 100vw;
+    padding: .5rem 1rem;
+    transition: .3s ease;
+}
+header nav a:hover ,.active{
+    background:rgb(172, 0, 134);
+}
+.mainimg{
+    position: absolute;
+    width: 33rem;
+    bottom: 1;
+    right: 3rem;
+    top: 6rem;
+
+}
+.dots{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8rem;
+}
+.leftdots{
+    top: unset;
+    right: unset;
+    bottom: 0;
+    left: 0;
+}
+
+section{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+}
+section .konten{
+    padding-left: 7%;
+}
+section .konten h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    position: relative;
+}
+section .konten h1:before,section .konten h1::after{
+    content: '';
+    position: absolute;
+    background: url('') center center / cover;
+    width: 20rem;aspect-ratio: 1/1;
+    top: 9rem;
+    left: 500rem;
+}
+section .konten h1::after{
+    top: unset;bottom: -9rem;
+}
+.button{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.button button{
+    position: 5rem;
+    background: transparent;
+    color: #fff;
+    color: inherit;
+    border-radius: 100vw;
+    border: 2px solid rgb(255, 0, 234);
+    padding: .8rem 3.5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.button button:hover{
+    background: aqua;
+}
+
+.button button a{
+    color: #fff;
+    font-style: normal;
+    font: optional;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section .konten p{
+    font-size: .8rem;
+    width: 70%;
+}
